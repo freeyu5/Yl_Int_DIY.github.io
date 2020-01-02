@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>UY/IntDIY</title>
+		<style type = "text/css">
+		.yetou{
+		width:100%;
+		height:200px;
+		}
+		.logo{
+		height:150px;
+		margin:25px 25px 25px;
+		}
+		body{
+		background-color:black;
+		}
+		.ZanW{
+		width:100%;
+		height:10px;
+		background-color:white;
+		}
+		.ZhuTi{
+		width:100%;
+		height:100px;
+		background-color:black;
+		margin-top:350px;
+		}
+		
+		.WangZhiMuK{
+		width:20%;
+		height:250px;
+		margin:0px 2%;
+		background-color:white;
+		float:left;
+		}
+		.WangZhiMuKNM{
+		width:20%;
+		height:35px;
+		margin:0px 2%;
+		background-color:white;
+		float:left;
+		}
+		button{
+		width:100%;
+		height:100%;
+		font-size:28px;
+		}
+		.ul1{
+		padding-top:300px;
+		padding-bottom:0px;
+		}
+		p{
+		width:90%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+		margin:auto;
+		}
+		.ZanW2{
+		height:100px;
+		background-color:white;
+		}
+		</style>
+
+	</head>
+	
+	<body>
+		<div class = 'yetou'><img class = 'logo' src = 'img/yl.png' /></div>
+		<div class = "ZanW"></div>
+		
+		<div class = 'ZhanShiTu' style = 'width:100%;height:50px;'><img src = 'img/heise.jpg' style = 'width:100%;'> </div>
+		
+		<div class = "ZhuTi">
+			<ul class = 'ul1'>
+				<a id = 'WangZhi0' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi1' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi2' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi3' href = '' ><li class="WangZhiMuK"></li></a>
+			</ul>
+			<ul class = 'ul2'>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan0()'><p id = 'WangZhi0T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan1()'><p id = 'WangZhi1T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan2()'><p id = 'WangZhi2T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan3()'><p id = 'WangZhi3T'>新的网址</p></button>
+				</li>
+				</a>
+			</ul>
+		</div>
+			<ul class = 'ul1'>
+				<li></li>
+			</ul>
+		
+		<div class = "ZhuTi2">
+			<ul class = 'ul1'>	
+				<a id = 'WangZhi4' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi5' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi6' href = '' ><li class="WangZhiMuK"></li></a>
+				<a id = 'WangZhi7' href = '' ><li class="WangZhiMuK"></li></a>
+			</ul>
+			
+			<ul class = 'ul2'>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan4()'><p id = 'WangZhi4T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan5()'><p id = 'WangZhi5T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan6()'><p id = 'WangZhi6T'>新的网址</p></button>
+				</li>
+				</a>
+				<a><li class="WangZhiMuKNM">
+				<button type = 'button' onclick = 'GengHuan7()'><p id = 'WangZhi7T'>新的网址</p></button>
+				</li>
+				</a>
+			</ul>
+		</div>
+<script>
+
+function GengHuan0(){
+var WangZhi0 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi0 = 'https://' + WangZhi0;
+localStorage.LSWangZhi0T = WangZhi0;
+document.getElementById('WangZhi0').href = localStorage.LSWangZhi0;
+document.getElementById('WangZhi0T').innerHTML = localStorage.LSWangZhi0T;
+}
+document.getElementById('WangZhi0').href = localStorage.LSWangZhi0;
+document.getElementById('WangZhi0T').innerHTML = localStorage.LSWangZhi0T;
+
+
+function GengHuan1(){
+var WangZhi1 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi1 = 'https://' + WangZhi1;
+localStorage.LSWangZhi1T = WangZhi1;
+document.getElementById('WangZhi1').href = localStorage.LSWangZhi1;
+document.getElementById('WangZhi1T').innerHTML = localStorage.LSWangZhi1T;
+}
+document.getElementById('WangZhi1').href = localStorage.LSWangZhi1;
+document.getElementById('WangZhi1T').innerHTML = localStorage.LSWangZhi1T;
+
+
+function GengHuan2(){
+var WangZhi2 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi2 = 'https://' + WangZhi2;
+localStorage.LSWangZhi2T = WangZhi2;
+document.getElementById('WangZhi2').href = localStorage.LSWangZhi2;
+document.getElementById('WangZhi2T').innerHTML = localStorage.LSWangZhi2T;
+}
+document.getElementById('WangZhi2').href = localStorage.LSWangZhi2;
+document.getElementById('WangZhi2T').innerHTML = localStorage.LSWangZhi2T;
+
+function GengHuan3(){
+var WangZhi3 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi3 = 'https://' + WangZhi3;
+localStorage.LSWangZhi3T = WangZhi3;
+document.getElementById('WangZhi3').href = localStorage.LSWangZhi3;
+document.getElementById('WangZhi3T').innerHTML = localStorage.LSWangZhi3T;
+}
+document.getElementById('WangZhi3').href = localStorage.LSWangZhi3;
+document.getElementById('WangZhi3T').innerHTML = localStorage.LSWangZhi3T;
+
+
+function GengHuan4(){
+var WangZhi4 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi4 = 'https://' + WangZhi4;
+localStorage.LSWangZhi4T = WangZhi4;
+document.getElementById('WangZhi4').href = localStorage.LSWangZhi4;
+document.getElementById('WangZhi4T').innerHTML = localStorage.LSWangZhi4T;
+}
+document.getElementById('WangZhi4').href = localStorage.LSWangZhi4;
+document.getElementById('WangZhi4T').innerHTML = localStorage.LSWangZhi4T;
+
+function GengHuan5(){
+var WangZhi5 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi5 = 'https://' + WangZhi5;
+localStorage.LSWangZhi5T = WangZhi5;
+document.getElementById('WangZhi5').href = localStorage.LSWangZhi5;
+document.getElementById('WangZhi5T').innerHTML = localStorage.LSWangZhi5T;
+}
+document.getElementById('WangZhi5').href = localStorage.LSWangZhi5;
+document.getElementById('WangZhi5T').innerHTML = localStorage.LSWangZhi5T;
+
+
+function GengHuan6(){
+var WangZhi6 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi6 = 'https://' + WangZhi6;
+localStorage.LSWangZhi6T = WangZhi6;
+document.getElementById('WangZhi6').href = localStorage.LSWangZhi6;
+document.getElementById('WangZhi6T').innerHTML = localStorage.LSWangZhi6T;
+}
+document.getElementById('WangZhi6').href = localStorage.LSWangZhi6;
+document.getElementById('WangZhi6T').innerHTML = localStorage.LSWangZhi6T;
+
+function GengHuan7(){
+var WangZhi7 = window.prompt('输入网址 (如: www.baidu.com)');
+localStorage.LSWangZhi7 = 'https://' + WangZhi7;
+localStorage.LSWangZhi7T = WangZhi7;
+document.getElementById('WangZhi7').href = localStorage.LSWangZhi7;
+document.getElementById('WangZhi7T').innerHTML = localStorage.LSWangZhi7T;
+}
+document.getElementById('WangZhi7').href = localStorage.LSWangZhi7;
+document.getElementById('WangZhi7T').innerHTML = localStorage.LSWangZhi7T;
+
+</script>
+	</body>
+</html>
